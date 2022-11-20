@@ -4,3 +4,13 @@ body {
     background: linear-gradient(to right, #2ebf91, #8360c3);
 
 }
+
+.container {
+    margin-top: 4rem;
+}
+
+.botton {
+    color: #fff;
+    background-color: #8360c3;
+    border: #8360c3;
+}
