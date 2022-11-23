@@ -1,12 +1,14 @@
 body {
-    background: #8360c3;
-    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
     background: linear-gradient(to right, #2ebf91, #8360c3);
-
+    text-align: center;
 }
 
 .container {
     margin-top: 4rem;
+}
+
+.form-control {
+    text-align: center;
 }
 
 .botton {

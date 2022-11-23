@@ -21,7 +21,6 @@ function eventListeners() {   // tüm eventListeners
     clearButton.addEventListener("click", clearAllTodos);
 }
 
-
 function clearAllTodos(e) {
     if (confirm("Tümünü silmek istediğinize emin misiniz? ")) {
         //Arayüzden todoları silme:
@@ -33,8 +32,6 @@ function clearAllTodos(e) {
         localStorage.removeItem("todos");
     }
 }
-
-
 
 function filterTodos(e) {
     const filterValue = e.target.value.toLowerCase();
@@ -55,8 +52,6 @@ function filterTodos(e) {
     });
 }
 
-
-
 function deleteTodo(e) {
 
     if (e.target.className === "fa fa-remove") {
@@ -65,7 +60,6 @@ function deleteTodo(e) {
         showAlert("success", "To-Do başarıyla silindi...")
     }
 }
-
 
 function deleteTodoFromStorage(deletetodo) {
     let todos = getTodosFromStorage();
@@ -79,7 +73,6 @@ function deleteTodoFromStorage(deletetodo) {
     localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-
 function loadAllTodosToUI() {
     let todos = getTodosFromStorage();
 
@@ -87,7 +80,6 @@ function loadAllTodosToUI() {
         addTodoToUI(todo);
     })
 }
-
 
 function addTodo(e) {
     const newTodo = todoInput.value.trim(); //trim : gereksiz boşlukları siler.
